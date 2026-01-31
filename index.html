@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribe to UPIC</title>
+    <style>
+        body { font-family: 'Georgia', serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+        input { padding: 10px; width: 250px; border: 1px solid #ddd; border-radius: 4px; }
+        button { padding: 10px 20px; background: #1a1a1a; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>UPIC Newsletter</h2>
+        <p>Stay updated with our bi-weekly market insights.</p>
+        
+        <form action="https://script.google.com/macros/s/AKfycbwWRouEaukTjuCV_0HCU4UGXtuw5A29l4EMWKPZYR-59unO8P3T3lA2bY1F5cbvJrnE/exec" method="POST" target="hidden_iframe" onsubmit="alert('Check your inbox for confirmation!')">
+            <input type="email" name="email" placeholder="yourname@up.edu.ph" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    </div>
+</body>
+</html>
